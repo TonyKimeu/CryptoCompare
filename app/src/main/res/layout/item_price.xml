@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:elevation="7dp"
+    android:layout_margin="7dp"
+    app:cardBackgroundColor="@color/ghostwhite"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:textColor="@color/title"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USD"/>
+
+    <TextView
+        android:id="@+id/lbBTC"
+        android:layout_below="@id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Bitcoin: "/>
+
+    <TextView
+        android:id="@+id/tvBTC"
+        android:layout_below="@id/tvName"
+        android:layout_toRightOf="@+id/lbBTC"
+        android:layout_width="wrap_content"
+        android:textSize="17dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/lbETH"
+        android:layout_below="@id/lbBTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Ethereum: "/>
+
+    <TextView
+        android:id="@+id/tvETH"
+        android:textColor="@color/year"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/lbETH"
+        android:layout_below="@id/tvBTC"
+        android:textSize="17dp"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

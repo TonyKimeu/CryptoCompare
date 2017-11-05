@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.allattentionhere.fabulousfilter.AAH_FilterView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        tools:ignore="MissingPrefix"
+        tools:visibility="visible"
+        android:paddingTop="17dp">
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/group1"
+                android:layout_margin="7dp"
+                android:gravity="center">
+
+            <CheckBox
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/USD"
+                android:background="@drawable/radiobackground"
+                android:text="USD"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:button="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                />
+
+
+            <CheckBox
+                android:layout_toRightOf="@+id/USD"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/EUR"
+                android:background="@drawable/radiobackground"
+                android:text="EUR"
+                android:textIsSelectable="true"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:button="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:layout_toRightOf="@+id/EUR"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/NGN"
+                android:background="@drawable/radiobackground"
+                android:text="NGN"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:button="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"/>
+
+            <CheckBox
+                android:layout_toRightOf="@+id/NGN"
+                android:fitsSystemWindows="true"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:id="@+id/GBP"
+                android:gravity="center"
+                android:background="@drawable/radiobackground"
+                android:text="GBP"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:button="@android:color/transparent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group2"
+                android:layout_below="@+id/group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:fitsSystemWindows="true"
+                android:gravity="center"
+                android:padding="7dp"
+                >
+    
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/JPY"
+                        android:background="@drawable/radiobackground"
+                        android:text="JPY"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/JPY"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/CHF"
+                        android:background="@drawable/radiobackground"
+                        android:text="CHF"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/CHF"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/CAD"
+                        android:background="@drawable/radiobackground"
+                        android:text="CAD"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/CAD"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/AUD"
+                        android:background="@drawable/radiobackground"
+                        android:text="AUD"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group3"
+                android:layout_below="@+id/group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="7dp">
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/HKD"
+                        android:background="@drawable/radiobackground"
+                        android:text="HKD"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox android:layout_weight="1"
+                        android:layout_toRightOf="@+id/HKD"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/INR"
+                        android:background="@drawable/radiobackground"
+                        android:text="INR"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox android:layout_weight="1"
+                        android:layout_toRightOf="@+id/INR"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/CNY"
+                        android:background="@drawable/radiobackground"
+                        android:text="CNY"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox android:layout_weight="1"
+                        android:layout_toRightOf="@+id/CNY"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/EGP"
+                        android:background="@drawable/radiobackground"
+                        android:text="EGP"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/group3"
+                android:id="@+id/group4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="7dp"
+                >
+                    <CheckBox android:layout_weight="1"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ILS"
+                        android:background="@drawable/radiobackground"
+                        android:text="ILS"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/ILS"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/RUB"
+                        android:background="@drawable/radiobackground"
+                        android:text="RUB"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/RUB"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ZAR"
+                        android:background="@drawable/radiobackground"
+                        android:text="ZAR"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/ZAR"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ARS"
+                        android:background="@drawable/radiobackground"
+                        android:text="ARS"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+    
+                </LinearLayout>
+            <LinearLayout
+                android:layout_below="@+id/group4"
+                android:id="@+id/group5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="7dp"
+                >
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/BRL"
+                        android:background="@drawable/radiobackground"
+                        android:text="BRL"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/BRL"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/SEK"
+                        android:background="@drawable/radiobackground"
+                        android:text="SEK"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/SEK"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/SAR"
+                        android:background="@drawable/radiobackground"
+                        android:text="SAR"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                    <CheckBox
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/SAR"
+                        android:fitsSystemWindows="true"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/QAR"
+                        android:background="@drawable/radiobackground"
+                        android:text="QAR"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:button="@android:color/transparent"
+                        android:layout_marginRight="5dp" />
+                </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Close"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:layout_weight="1"
+            />
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Select"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</com.allattentionhere.fabulousfilter.AAH_FilterView>
